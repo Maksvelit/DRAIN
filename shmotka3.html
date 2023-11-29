@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shmotkicss.css">
+</head>
+<body>
+    <header>
+        <nav>   
+            <a href="index.html"><img src="images/logo-no-background.png"; height="90" width="250"></a>
+                <div class="navvv">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="rew.html">Reviews</a>
+                <a href="contacts.html">Contact</a>
+            </div>
+            <div class="icons">
+                <a href="https://t.me/Zelenka7"><img src="images/tg.png" height="20" width="20"></a>
+                <a href="https://www.instagram.com/zxcursedqqe/"><img src="images/inst.png" height="20" width="20"></a>
+                <a href="https://discord.com/invite/gSqHAvZPuF"><img src="images/ds.png" height="20" width="20"></a>
+<!-- Контейнер для изображения и выпадающего списка -->
+                            <div class="icon-container">
+                                <!-- Иконка или изображение -->
+                               <img src="images/grocery-store.png" alt="Your Icon" width="20" height="20">
+             
+                                        <!-- Выпадающий список -->
+                                        <div class="dropdown-content">
+                                           <p><span class="textblack">Корзина и настройки</span></p>
+                                               <a class="vypspis" href="#"><span class="textblack"> buy now</span></a>
+                                               <a class="vypspis" href="#"><span class="textblack">your setings</span></a>
+
+                                       </div>
+            </div>
+                            
+        </nav>
+    </header>
+<div class="miantovar">
+
+    <div class="slider-container">
+
+        <div class="slider">
+
+            <div class="slide"><img src="images/tPxVHopePfk.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="images/pN4i9Z3CFTE.jpg" alt="Slide 2"></div>
+        </div>
+    
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+        <button class="next" onclick="plusSlides(1)">❯</button>
+        
+    
+    </div>
+        <div class="text">
+    <h1>"Battalion of Bastards" Longsleeve</h1>
+    <h1>19.99$</h1>
+    <h2>buy now<br><br>
+        - хлопок 92%, лайкра 8%<br>
+        - универсальные оверсайз лекала<br>
+        - полная вышивка<br>
+        - стикеры в комплекте<br>
+</h2>
+        <button class="custom-btn btn-16" >Add to Cart</button>
+        </div>
+        
+</div>
+
+
+    <script>
+        let slideIndex = 1;
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.transform = "translateX(" + -400 * (slideIndex - 1) + "px)";
+            }
+        }
+    </script>
+</body>
+</html>
