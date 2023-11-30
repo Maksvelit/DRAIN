@@ -140,7 +140,6 @@ h2{
 
 .prev, .next {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
     cursor: pointer;
